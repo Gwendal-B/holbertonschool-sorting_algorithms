@@ -13,7 +13,7 @@ int partition(int array[], int low, int high, size_t size);
  */
 void quick_sort(int *array, size_t size)
 {
-	if (!array)
+	if (!array || size < 2)
 		return;
 
 	recurs(array, 0, size - 1, size);
